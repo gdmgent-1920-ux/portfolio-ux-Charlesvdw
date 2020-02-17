@@ -1,8 +1,8 @@
 # UX portfolio template 1920
 
-## Name:
+## Name: Van De Walle Charles 
 
-## Group:
+## Group: 1AVDa
 
 ## Getting Started
 
