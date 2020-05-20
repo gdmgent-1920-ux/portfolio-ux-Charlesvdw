@@ -26,11 +26,12 @@ const toggleNavigationIconList = (navToggler) => {
     const searchLinksIcon = document.querySelector('.fa-search');
     const row1Links = document.querySelector(".row1-links");
     const footerLinks = document.querySelector('.footer-links');
-    const userIcon = document.querySelector('.user-icon');
     const articleLinks = document.querySelector('.article-no');
     articleLinks.classList.toggle('toggled');
-    document.getElementById('user-icon').innerHTML = "LOG IN";
-    userIcon.classList.remove('fa-user');
+    const userIcon = document.querySelector('.user-icon');
+    const loginLinks = document.getElementById('login-text');
+    loginLinks.classList.toggle('toggled');
+    userIcon.classList.toggle('fa-user');
     footerLinks.classList.toggle('toggled');
     row1Links.classList.toggle('toggled');
     searchLinksIcon.classList.toggle('toggled');
@@ -46,9 +47,10 @@ const toggleNavigationIconDetail = (navToggler) => {
     const mainLinks = document.querySelector('.no-detail');
     const footerLinks = document.querySelector('.footer-links');
     const userIcon = document.querySelector('.user-icon');
-    document.getElementById('user-icon').innerHTML = "LOG IN";
-    mainLinks.classList.toggle('toggled')
-    userIcon.classList.remove('fa-user');
+    const loginLinks = document.getElementById('login-text');
+    loginLinks.classList.toggle('toggled');
+    userIcon.classList.toggle('fa-user');
+    mainLinks.classList.toggle('toggled');
     footerLinks.classList.toggle('toggled');
     searchLinksIcon.classList.toggle('toggled');
     searchLinks.classList.toggle('toggled');
@@ -61,9 +63,12 @@ const toggleNavigationIconContact = (navToggler) => {
     const searchLinks = document.querySelector('.zoekbalk');
     const searchLinksIcon = document.querySelector('.fa-search');
     const footerLinks = document.querySelector('.footer-links');
+    const mainLinks = document.querySelector('.no-contact');
     const userIcon = document.querySelector('.user-icon');
-    document.getElementById('user-icon').innerHTML = "LOG IN";
-    userIcon.classList.remove('fa-user');
+    const loginLinks = document.getElementById('login-text');
+    loginLinks.classList.toggle('toggled');
+    userIcon.classList.toggle('fa-user');
+    mainLinks.classList.toggle('toggled');
     footerLinks.classList.toggle('toggled');
     searchLinksIcon.classList.toggle('toggled');
     searchLinks.classList.toggle('toggled');
