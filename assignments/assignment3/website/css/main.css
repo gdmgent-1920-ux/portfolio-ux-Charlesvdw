@@ -682,6 +682,10 @@ p.review-number {
     width: 275px;
 }
 
+main.no-contact.toggled, footer.no-contact.toggled {
+    display: none;
+}
+
 .form-control input::placeholder {
     visibility: hidden;
 }
