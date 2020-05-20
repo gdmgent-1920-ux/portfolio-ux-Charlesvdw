@@ -1,13 +1,447 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/main.css">
-    <title>[STUDENT NAME] | [CLASS] | Opdracht 3</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://kit.fontawesome.com/3ad8a4f888.js" crossorigin="anonymous"></script>
+    <title>CHARLES VAN DE WALLE | 1AVDa | Opdracht 3</title>
 </head>
+
 <body>
-    <div>Pas deze pagina aan met jouw code om opdracht 3 te vervolledigen!</div>
+    <header>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-10 col-md-2">
+                        <a href="./index.html"><img class="header-logo" src="./Images/Logo(1).png" alt="Logo"></a>
+                    </div>
+                    <div class="col-2 col-md-10">
+                        <nav class="nav-links">
+                            <ul>
+                                <a href="./list.html">
+                                    <li>
+                                        <p class="body-regular-white">PRE-ORDERS</p>
+                                    </li>
+                                </a>
+                                <a href="./list.html">
+                                    <li>
+                                        <p class="body-regular-white">BESTSELLERS</p>
+                                    </li>
+                                </a>
+                                <a href="./list.html">
+                                    <li>
+                                        <p class="body-regular-white">NEW RELEASES</p>
+                                    </li>
+                                </a>
+                                <li>
+                                    <div class="dropdown" onclick="toggleDropdownNavigation(this)">
+                                        <button class="genres">
+                                            <p class="body-regular-white">GENRES<div class="arrow under"></div>
+                                            </p>
+                                        </button>
+                                        <div class="dropdown-content">
+                                            <a href="./list.html">Reggae</a>
+                                            <a href="./list.html">Electronic</a>
+                                            <a href="./list.html">Jazz</a>
+                                            <a href="./list.html">Classic</a>
+                                            <a href="./list.html">Pop</a>
+                                            <a href="./list.html">Metal</a>
+                                            <a href="./list.html">Rock</a>
+                                            <a href="./list.html">Rap</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <a href="./contact.html">
+                                    <li>
+                                        <p class="body-regular-white">CONTACT US</p>
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <i class="fas fa-user user-icon" id="user-icon">
+                                        <p id="login-text">LOG IN</p>
+                                    </i>
+                                </a>
+                            </ul>
+                        </nav>
+                        <div class="nav-toggler" onclick="toggleNavigationIconHome(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 center">
+                        <input type="text" class="zoekbalk" name="zoekbalk" id="zoekbalk" autofocus>
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container main row1-links">
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <h2>PRE-ORDERS</h2>
+                </div>
+                <div class="col-12 col-md-9 empty-space"></div>
+            </div>
+            <div class="row justify-content-center">
+                <article>
+                    <a href="./detail.html">
+                        <div class="card-header">
+                            <img src="./Images/Eurythmics.png" alt="Eurythmics">
+                            <div class="tag">
+                                <div class="triangle">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="tag-text center">Pre-order</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p class="body-bold-black">Touch</p>
+                            <p class="body-regular-black">Eurythmics</p>
+                            <p class="large-body-bold-black">€47,00</p>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="./detail.html">
+                        <div class="card-header">
+                            <img src="./Images/Nirvana.png" alt="Nirvana">
+                            <div class="tag">
+                                <div class="triangle">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="tag-text center">Pre-order</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p class="body-bold-black">Nevermind</p>
+                            <p class="body-regular-black">Nirvana</p>
+                            <p class="large-body-bold-black">€39,00</p>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="./detail.html">
+                        <div class="card-header">
+                            <img src="./Images/Pink Floyd.png" alt="Pink Floyd">
+                            <div class="tag">
+                                <div class="triangle">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="tag-text center">Pre-order</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p class="body-bold-black">Dark Side Of The Moon</p>
+                            <p class="body-regular-black">Pink Floyd</p>
+                            <p class="large-body-bold-black">€52,00</p>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="./detail.html">
+                        <div class="card-header">
+                            <img src="./Images/David Bowie.png" alt="David Bowie">
+                            <div class="tag">
+                                <div class="triangle">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="tag-text center">Pre-order</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p class="body-bold-black">Aladdin Sane</p>
+                            <p class="body-regular-black">David Bowie</p>
+                            <p class="large-body-bold-black">€52,00</p>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="./detail.html">
+                        <div class="card-header">
+                            <img src="./Images/Red Hot Chilli Peppers.png" alt="Red Hot Chilli Peppers">
+                            <div class="tag">
+                                <div class="triangle">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="tag-text center">Pre-order</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p class="body-bold-black">Blood Sugar Sex Magik</p>
+                            <p class="body-regular-black">Red Hot Chili Peppers</p>
+                            <p class="large-body-bold-black">€52,00</p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </div>
+        <div class="container main row2-links">
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <h2>BESTSELLERS</h2>
+                </div>
+                <div class="col-12 col-md-9"></div>
+            </div>
+            <div class="row justify-content-center">
+                <article>
+                    <a href="./detail.html">
+                        <div class="card-header">
+                            <img src="./Images/Queen.png" alt="Queen">
+                            <div class="tag">
+                                <div class="triangle">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="tag-text center">Sale</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p class="body-bold-black">A Night At The Opera</p>
+                            <p class="body-regular-black">Queen</p>
+                            <p class="sale-price">€55,00</p>
+                            <p class="large-body-bold-black">€40,00</p>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="./detail.html">
+                        <div class="card-header">
+                            <img src="./Images/Queen(1).png" alt="Queen">
+                        </div>
+                        <div class="card-content">
+                            <p class="body-bold-black">Greatest Hits II</p>
+                            <p class="body-regular-black">Queen</p>
+                            <p class="large-body-bold-black">€81,00</p>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="./detail.html">
+                        <div class="card-header">
+                            <img src="./Images/Queen(2).png" alt="Queen">
+                        </div>
+                        <div class="card-content">
+                            <p class="body-bold-black">Sheer Heart Attack</p>
+                            <p class="body-regular-black">Queen</p>
+                            <p class="large-body-bold-black">€56,00</p>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="./detail.html">
+                        <div class="card-header">
+                            <img src="./Images/Queen(3).png" alt="Queen">
+                            <div class="tag">
+                                <div class="triangle">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="tag-text center">Sale</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p class="body-bold-black">Greatest Hits I</p>
+                            <p class="body-regular-black">Queen</p>
+                            <p class="sale-price">€60,00</p>
+                            <p class="large-body-bold-black">€45,00</p>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="./detail.html">
+                        <div class="card-header">
+                            <img src="./Images/Queen(4).png" alt="Queen">
+                        </div>
+                        <div class="card-content">
+                            <p class="body-bold-black">The Game</p>
+                            <p class="body-regular-black">Queen</p>
+                            <p class="large-body-bold-black">€57,00</p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </div>
+        <div class="container main row3-links">
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <h2>NEW RELEASES</h2>
+                </div>
+                <div class="col-12 col-md-9"></div>
+            </div>
+            <div class="row justify-content-center lastrow">
+                <article>
+                    <a href="./detail.html">
+                        <div class="card-header">
+                            <img src="./Images/Mac Miller.png" alt="Mac Miller">
+                        </div>
+                        <div class="card-content">
+                            <p class="body-bold-black">Circles</p>
+                            <p class="body-regular-black">Mac Miller</p>
+                            <p class="large-body-bold-black">€68,00</p>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="./detail.html">
+                        <div class="card-header">
+                            <img src="./Images/Travis Scott.png" alt="Eurythmics">
+                        </div>
+                        <div class="card-content">
+                            <p class="body-bold-black">Astroworld</p>
+                            <p class="body-regular-black">Travis Scott</p>
+                            <p class="large-body-bold-black">€58,00</p>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="./detail.html">
+                        <div class="card-header">
+                            <img src="./Images/Post Malone.png" alt="Post Malone">
+                        </div>
+                        <div class="card-content">
+                            <p class="body-bold-black">Beerbongs And Bentleys</p>
+                            <p class="body-regular-black">Post Malone</p>
+                            <p class="large-body-bold-black">€70,00</p>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="./detail.html">
+                        <div class="card-header">
+                            <img src="./Images/Drake.png" alt="Drake">
+                        </div>
+                        <div class="card-content">
+                            <p class="body-bold-black">Scorpion</p>
+                            <p class="body-regular-black">Drake</p>
+                            <p class="large-body-bold-black">€79,00</p>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="./detail.html">
+                        <div class="card-header">
+                            <img src="./Images/Tones And I.png" alt="Tones and I">
+                        </div>
+                        <div class="card-content">
+                            <p class="body-bold-black">The Kids Are Coming</p>
+                            <p class="body-regular-black">Tones and I</p>
+                            <p class="large-body-bold-black">€39,00</p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container footer-links">
+            <div class="row">
+                <div class="col-0 col-md-4 center footer-logo">
+                    <a href="./index.html"><img src="./Images/Logo(1).png" alt="Logo"></a>
+                </div>
+                <div class="col-1 col-md-0 gone"></div>
+                <div class="col-11 col-md-2">
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="./list.html">
+                                <p class="body-bold-white">PRE-ORDERS</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="./list.html">
+                                <p class="body-bold-white footer-nav">BESTSELLERS</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="./list.html">
+                                <p class="body-bold-white footer-nav">NEW RELEASES</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1 col-md-3"></div>
+                <div class="col-11 col-md-2">
+                    <div class="row">
+                        <div class="col-12 center">
+                            <a href="./list.html">
+                                <p class="body-bold-white footer-genres">GENRES</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <a href="./list.html">
+                                <p class="body-regular-white footer-menu">Reggae</p>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <a href="./list.html">
+                                <p class="body-regular-white right footer-menu">Pop</p>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <a href="./list.html">
+                                <p class="body-regular-white footer-menu">Electronic</p>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <a href="./list.html">
+                                <p class="body-regular-white right footer-menu">Metal</p>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <a href="./list.html">
+                                <p class="body-regular-white footer-menu">Jazz</p>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <a href="./list.html">
+                                <p class="body-regular-white right footer-menu">Rock</p>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <a href="./list.html">
+                                <p class="body-regular-white footer-menu">Classic</p>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <a href="./list/html">
+                                <p class="body-regular-white right footer-menu">Rap</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1 col-md-3"></div>
+                <div class="col-11 col-md-2">
+                    <div class="row">
+                        <div class="col-12 col-md-12">
+                            <a href="./contact.html">
+                                <p class="body-bold-white footer-genres center">CONTACT US</p>
+                            </a>
+                        </div>
+                        <div class="col-5 col-md-12 icons">
+                            <a href="https://www.instagram.com/" target="_blank"><i
+                                    class="fab fa-instagram right"></i></a>
+                            <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./js/app.js"></script>
 </body>
+
 </html>
